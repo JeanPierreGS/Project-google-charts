@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pews Admin</title>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1f0779131f.js" crossorigin="anonymous"></script>
+    <!-- Font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+    <!-- Font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Piew's Admin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html"> <i class="fas fa-home"></i> Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="html/sales.html"><i class="fas fa-dollar-sign"></i> Sales</a>
+                        <a class="nav-item nav-link" href="https://first-nodejs-app-0.herokuapp.com/" target="_blank"><i class="fas fa-building"></i> About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container pri">
+        <div class="row">
+            <div class="col-md-4 col-sm-8 col-8 mx-auto border border-secondary mt-4 borderer" style="background-color: white;"">
+                <div class="h4 text-dark text-center mt-1">Stats</div>
+                <form class="form mt-1 p-2 text-center col-12 mx-auto">
+                    <div class="form-group">
+                        <h6 class="text-dark">Select year</h6>
+                        <select id="years" class="btn btn-dark btn-block">
+
+                        </select>
+                    </div>
+                    <hr class="clearfix w-100 pb-1">
+                    <div class="form-group">
+                        <h6 class="text-dark">Type of analysis</h6>
+                        <select class="btn btn-dark btn-block" id="typeS">
+                            <option>Monthly</option>
+                            <option>Bimonthly</option>
+                            <option>Quarterly</option>
+                            <option>Triannual</option>
+                            <option>Biannual</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block" id="show" type="button">Show</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" style="display: flex;">
+            <div class="col-md-6 col-sm-12 mt-3 mb-2 borderer">
+                <table class="table table-dark m-0" id="table">
+
+                </table>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3 mb-4 " style="display: none;" id="div-bars">
+                <div id="barchart_material" class="overflow-auto p-1 border border-light borderer" style="background-color: white;"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center p-2">
+        <p class="h7 m-0">Jean Pierre Gómez 2020 &copy;</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+
+</html>

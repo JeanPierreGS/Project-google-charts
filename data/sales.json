@@ -1,0 +1,30 @@
+{
+    "2015" : {
+        "January" : 265,
+        "February" : 260,
+        "March": 330,
+        "April" : 325,
+        "May" : 307,
+        "June" : 290,
+        "July" : 280,
+        "August" : 311,
+        "September" : 289,
+        "October" : 305,
+        "November" : 315,
+        "December" : 356
+    },
+    "2016" : {
+        "January" : 300,
+        "February" : 315,
+        "March": 285,
+        "April" : 358,
+        "May" : 307,
+        "June" : 367,
+        "July" : 359,
+        "August" : 402,
+        "September" : 367,
+        "October" : 362,
+        "November" : 405,
+        "December" : 414
+    }
+}
